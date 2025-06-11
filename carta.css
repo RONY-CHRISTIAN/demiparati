@@ -1,0 +1,56 @@
+/* Fondo animado para Carta */
+.carta-body {
+    background: linear-gradient(-45deg,  #ff9a9e, #ff758c, #ff7eb3, #ff4d6d, #c471ed, #f857a6, #ff6b81, #ff3e6b,
+    #ff9a9e, #ff758c, #ff7eb3, #ff4d6d, #c471ed, #f857a6, #ff6b81, #ff3e6b);
+    background-size: 400% 400%;
+    animation: cambiarFondo 20s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Animación de fondo */
+@keyframes cambiarFondo {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Carta en la segunda pantalla con líneas de papel */
+.carta-contenedor {
+    background: white;
+    width: 320px;
+    height: 380px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Líneas de papel */
+.carta-contenedor::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: repeating-linear-gradient(white, white 22px, #ccc 23px);
+    z-index: -1;
+}
+
+/* Emoticones flotando */
+.emoticones {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
