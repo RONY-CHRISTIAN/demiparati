@@ -32,9 +32,9 @@ window.onload = function() {
 function generarEmoticones() {
     const contenedor = document.querySelector(".emoticones");
     //const emojis = ["❤️", "💖", "💘", "💌", "💕", "😍", "🥰"];
-    const emojis = ["❤️", "💖", "💘", "💝", "💌", "💕", "💓", "💗","cambiado", "😘", "😚", "😙", "🥰", "💞", "💕", "💓"];
+    const emojis = ["❤️", "💖", "💘", "💝", "💌", "💕", "💓", "💗", "😘", "😚", "😙", "🥰", "💞", "💕", "💓"];
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 50; i++) {
         let emoji = document.createElement("span");
         emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
         emoji.style.position = "absolute";
