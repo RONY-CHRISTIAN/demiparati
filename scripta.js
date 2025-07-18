@@ -1,7 +1,6 @@
 // Texto que se escribe poco a poco con salto de línea automático
 const mensaje = [
-"Desde el primer momento en que nuestras palabras se encontraron, sentí una conexión única y especial. Cada conversación que hemos compartido ha revelado lo extraordinaria que eres. Mi corazón siente como si te conociera de toda la vida. -Andres"
-];
+"Desde el primer momento en que nuestras palabras se encontraron, sentí una conexión única y especial. Cada conversación que hemos compartido ha revelado lo extraordinaria que eres. Mi corazón siente como si te conociera de toda la vida.     -Andres"];
 
 let index = 0;
 let subIndex = 0;
