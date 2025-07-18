@@ -7,7 +7,7 @@ const mensaje = [
 let index = 0;
 let subIndex = 0;
 let lineaActual = 0;
-const velocidadEscritura = 1; //100
+const velocidadEscritura = 80; //100
 
 function escribirTexto() {
     if (lineaActual < mensaje.length) {
